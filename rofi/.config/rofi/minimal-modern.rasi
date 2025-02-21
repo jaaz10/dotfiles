@@ -1,0 +1,71 @@
+* {
+    bg0:    #1a1b26F2;
+    bg1:    #24283b;
+    bg2:    #414868;
+    fg0:    #c0caf5;
+    fg1:    #a9b1d6;
+    accent: #7aa2f7;
+
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @bg0;
+    border-radius:      8px;
+    width:             500px;
+    padding:           20px;
+}
+
+inputbar {
+    spacing:    8px;
+    padding:    8px;
+    background-color: @bg1;
+    border-radius: 4px;
+    margin: 0 0 8px 0;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    text-color: @fg0;
+    placeholder: "Search...";
+}
+
+listview {
+    lines:      8;
+    columns:    1;
+    fixed-height: false;
+}
+
+element {
+    padding:    8px;
+    spacing:    8px;
+    border-radius: 4px;
+}
+
+element normal.normal {
+    background-color: transparent;
+}
+
+element selected.normal {
+    background-color: @bg1;
+}
+
+element-icon {
+    size:   1em;
+}
+
+element-text {
+    text-color: inherit;
+}
